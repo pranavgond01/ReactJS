@@ -1,0 +1,136 @@
+Library 
+    - GSAP
+    -Lenis
+    -ReactJS
+
+Library use hoti hai perticularly ek feature ke liye, jaise ki moving animation ke liye GSAP use hota hai, smooth scrolling ke liye Lenis use hota hai aur ReactJS ek JavaScript library hai jo user interfaces banane ke liye use hoti hai.
+library me jyada customization hoti hai aur ye ek complete solution provide nhi karte hai, ye ek particular feature ke liye use hote hai.
+har ek featurs alag alg kr skte 
+
+
+
+Frameworks
+    - NextJS
+    - Angular
+
+subkuch inbuild mil jata hai jyada kuch customization nhi kr skte kr skte but jyda nhi kr skte , aur ye ek complete solution provide karte hai.
+Frameworks use hote hai ek complete solution ke liye, jaise ki NextJS ek React framework hai jo server-side rendering aur static site generation ke liye use hota hai, aur Angular ek TypeScript-based framework hai jo single-page applications banane ke liye use hota hai.
+
+
+
+
+Import Export
+       ye ek file se dusre file me data ko import aur export krne ke liye use hota hai, jaise ki agar hum ek file me variable define krte hai aur usko dusre file me use krna chahte hai to hum import export ka use krte hai.
+
+
+
+
+export hote hai 2 type ke
+1. Named Export    
+    - ye ek file me multiple variables ko export krne ke liye use hota hai, aur import krte waqt humko variable ka name dena padta hai.
+    - jaise ki agar hum ek file me 2 variable define krte hai aur usko export krte hai to humko import krte waqt dono variable ka name dena padta hai.
+    - jaise ki agar hum ek file me 2 variable define krte hai aur usko export krte hai to humko import krte waqt dono variable ka name dena padta hai.
+
+2. Default Export
+    - ye ek file me ek hi variable ko export krne ke liye use hota
+
+
+apn const se bhi variable define kr skte hai aur usko export kr skte hai, aur import krte waqt humko variable ka name dena padta hai.
+and also same chiz var ke sath bhi kr skte for example 
+        const user = 'pranav' orr
+        var user = 'pranav' both are same but const is better than var because const is block scope and var is function scope.
+
+
+
+
+
+ye hai default export ka example
+for example 
+
+ye hai script file ek dusri file se data import kr rhi hai
+
+
+import user from './app.js'
+
+console.log(user);
+
+
+and ye hai app file jisme variable define kiya gya hai aur usko export kiya gya hai
+
+const arr = [1, 2, 3, 4, 5];
+
+const user = 'pranav'
+  
+
+export default user;
+
+
+
+
+ab named export ka example dekhte hai
+
+
+
+const user = 'pranav'  #ye hai default export
+export const user;
+
+
+and 
+export const arr = [1, 2, 3, 4, 5]; #ye hai named export
+
+
+
+jb aap default export krte hai tb sirf ek hi variable ko export kr skte hai aur jb aap named export krte hai tb multiple variable ko export kr skte hai.
+aur import {age} from './app.js' #to age me actual jo name diiya hai vo print hoga na ki default wala but isme ek condition hai curly braces me jo name diya hai vo same hona chahiye jo named export me diya gya hai otherwise error aayega.
+
+
+real dom and virtual dom
+    - real dom me jb bhi koi change hota hai to pura page reload hota hai aur virtual dom me jb bhi koi change hota hai to sirf wahi part reload hota hai jisme change hua hai.
+ 
+
+ jo hume change krna hai perticular ek part virtual dom vhi krta hai sifr vo ek part hi change krta hai na ki pura page reload krta hai, isse performance better hoti hai aur user experience bhi better hota hai.
+
+
+
+
+jsx
+javascript xml ka short form hai, ye ek syntax extension hai jo react me use hota hai, ye javascript ke sath html ka combination hai, isse hum easily react component bana skte hai aur usme html likh skte hai.
+
+HTML + JAVASCRIPT = JSX
+
+
+isme hum function ko alg tarike se bhi call kr skte hai
+jaise ki
+
+hum 
+    function abc(){
+        console.log('hello world');
+    }
+
+abc()  #ye function ko call krne ka normal tarika hai
+
+aurr
+
+<abc />  #ye function ko call krne ka react ka tarika hai, isme hum function ko component ki tarah use krte hai aur usko call krte hai.
+
+
+folder create krne ke liye hum vite use  krte hai vite ek build tool hai jo react ke liye use hota hai, ye ek fast development environment provide krta hai aur isme hum easily react project create kr skte hai.
+vite ek blunder hai jisme hum folder create kr skte with the help of vite 
+
+
+
+
+ek function se sirf ek hi component create hota hai agr dusra krna hai to div bna lo div ke andr bna lo jitne h1 h3 or kuch bhi krna ho to 
+
+
+
+
+
+
+to create a vite project humko ye command use krni hoti hai
+npm create vite@latest <your-project-name>
+
+
+or npm create vite <projectname>
+
+
